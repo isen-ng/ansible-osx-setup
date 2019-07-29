@@ -1,0 +1,10 @@
+---
+- name: Install python PIP
+  shell: curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py | python
+
+- name: Installing common apps
+  include_role:
+    name: install_stuff_template
+  vars:
+    brew_apps: "{{ common_brew_apps }}"
+    brew_cask_apps: "{{ common_brew_cask_apps }}"

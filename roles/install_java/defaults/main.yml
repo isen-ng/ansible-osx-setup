@@ -1,0 +1,15 @@
+---
+java_brew_taps: []
+  #- adoptopenjdk/openjdk
+
+java_brew_apps: 
+  - jenv
+
+java_brew_cask_apps:
+  - jetbrains-toolbox
+  #- intellij-idea-ce
+  - adoptopenjdk8
+  #- adoptopenjdk11 # requires a cask that conflicts with openjdk8
+
+java_global_version: 
+  - 1.8

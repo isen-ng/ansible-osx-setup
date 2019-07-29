@@ -1,0 +1,7 @@
+---
+- name: Installing productivity apps
+  include_role:
+    name: install_stuff_template
+  vars:
+    brew_apps: "{{ productivity_brew_apps }}"
+    brew_cask_apps: "{{ productivity_brew_cask_apps }}"

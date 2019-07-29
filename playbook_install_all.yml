@@ -1,0 +1,11 @@
+---
+- name: Install all tools
+  hosts: 127.0.0.1
+  connection: local
+
+  roles:
+    - install_common
+    - install_dotnet
+    - install_java
+    - install_productivity
+    #- install_devops

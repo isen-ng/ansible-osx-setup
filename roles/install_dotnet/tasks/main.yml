@@ -1,0 +1,7 @@
+---
+- name: Installing dotnet apps
+  include_role:
+    name: install_stuff_template
+  vars:
+    brew_apps: "{{ dotnet_brew_apps }}"
+    brew_cask_apps: "{{ dotnet_brew_cask_apps }}"

@@ -1,0 +1,8 @@
+---
+dotnet_brew_apps: 
+  - mono
+
+dotnet_brew_cask_apps:
+  - dotnet-sdk
+  - jetbrains-toolbox
+  #- rider

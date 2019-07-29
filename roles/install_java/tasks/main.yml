@@ -1,0 +1,11 @@
+---
+- name: Installing java apps
+  include_role:
+    name: install_stuff_template
+  vars:
+    brew_taps: "{{ java_brew_taps }}"
+    brew_apps: "{{ java_brew_apps }}"
+    brew_cask_apps: "{{ java_brew_cask_apps }}"
+
+- name: "Set java version to {{ java_global_version }}"
+  shell: "jenv global {{ java_global_version }}"

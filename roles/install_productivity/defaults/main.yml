@@ -1,0 +1,10 @@
+---
+productivity_brew_apps: 
+  - gpg
+  - git-secret
+  
+productivity_brew_cask_apps:
+  - sublime-text
+  - iterm2
+  - keybase
+  - spectacle

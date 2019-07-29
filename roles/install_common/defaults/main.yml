@@ -1,0 +1,12 @@
+---
+common_brew_apps: 
+  - git
+  - wget
+
+common_brew_cask_apps:
+  - google-chrome
+  - docker
+  - firefox
+  - jetbrains-toolbox
+  - postman
+  - slack

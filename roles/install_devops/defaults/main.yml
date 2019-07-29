@@ -1,0 +1,25 @@
+---
+devops_brew_taps:
+  - sigsegv13/tgenv
+
+devops_brew_apps: 
+  - awscli
+  - aws-iam-authenticator
+  - kubernetes-cli
+  - kubernetes-helm
+  - fluxctl
+  - tfenv
+  - tgenv
+  - jq
+
+devops_pip_apps: 
+  - aws-google-auth
+  - git+https://github.com/makethunder/awsudo.git
+
+devops_terraform_versions: 
+  - 0.11.14
+devops_terragrunt_versions: 
+  - 0.18.7
+
+devops_terraform_global_version: 0.11.14
+devops_terragrunt_global_version: 0.18.7

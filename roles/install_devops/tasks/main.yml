@@ -1,0 +1,26 @@
+---
+vars_prompt:
+  - name: "awsudo_traveloka_email"
+    prompt: "Type in your traveloka email"
+    private: no
+
+- name: Installing devops apps
+  include_role:
+    name: install_stuff_template
+  vars:
+    brew_taps: "{{ devops_brew_taps }}"
+    brew_apps: "{{ devops_brew_apps }}"
+
+- name: "Install terraform"
+  shell: "tfenv install {{ item }}"
+  with_items: "{{ devops_terraform_versions }}"
+
+- name: "Set global terraform version to {{ devops_terraform_global_version }}"
+  shell: "tfenv use {{ devops_terraform_global_version }}"
+
+- name: "Install terragrunt"
+  shell: "tgenv install {{ item }}"
+  with_items: "{{ devops_terragrunt_versions }}"
+
+- name: "Set global terragrunt to {{ devops_terragrunt_global_version }}"
+  shell: "tgenv use {{ devops_terragrunt_global_version }}"
