@@ -4,5 +4,6 @@ dotnet_brew_apps:
 
 dotnet_brew_cask_apps:
   - dotnet-sdk
-  - jetbrains-toolbox
+  # install from jetbrains toolbox 
+  # use CLI when it's available: https://youtrack.jetbrains.com/issue/TBX-653
   #- rider

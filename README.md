@@ -40,3 +40,21 @@ git clone git@github.com:isen-ng/ansible-osx-setup.git
 # if it prompts for your password, type in your computer's password
 ansible-playbook playbook_install_all.yml
 ```
+
+## Tools installed
+
+| common            | java   | dotnet         | devops                | productivity
+|-------------------|--------|----------------|-----------------------|--------------
+| git               | jenv   | dotnet-sdk 2.2 | tenv                  | gpg
+| wget              | java8  | mono           | tgenv                 | git-secret
+| google-chrome     | java11 |                | terraform 0.11.14     | sublime-text
+| docker            |        |                | terragrunt 0.18.7     | keybase
+| firefox           |        |                | awscli                | spectacle
+| jetbrains-toolbox |        |                | aws-iam-authenticator | sourcetree
+| postman           |        |                | aws-google-auth       | iterm2
+| slack             |        |                | awsudo                |
+|                   |        |                | kubectl               |
+|                   |        |                | helm                  |
+|                   |        |                | fluxctl               |
+|                   |        |                | jq                    |
+
