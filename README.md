@@ -45,7 +45,7 @@ ansible-playbook playbook_install_all.yml
 
 | common            | java   | dotnet         | devops                | productivity
 |-------------------|--------|----------------|-----------------------|--------------
-| git               | jenv   | dotnet-sdk 2.2 | tenv                  | gpg
+| git               | jenv   | dotnet-sdk 2.2 | tfenv                 | gpg
 | wget              | java8  | mono           | tgenv                 | git-secret
 | google-chrome     | java11 |                | terraform 0.11.14     | sublime-text
 | docker            |        |                | terragrunt 0.18.7     | keybase
