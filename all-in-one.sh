@@ -31,7 +31,7 @@ git clone git@github.com:isen-ng/ansible-osx-setup.git
 # run the playbook
 # if it prompts for your password, type in your computer's password
 echo "Running playbook to install all tools ..."
-ansible-playbook playbook_install_all.yml
+(cd ansible-osx-setup && ansible-playbook playbook_install_all.yml)
 
 echo "Removing downloaded artifacts"
 rm -rf ansible-osx-setup
